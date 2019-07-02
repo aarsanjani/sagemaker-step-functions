@@ -244,7 +244,7 @@ for index,group in df.groupby('id_reseller'):
     
 df_features = pd.DataFrame(features)
 
-df_features = df_features.merge(df_res,how='inner',on='id_reseller')
+df_features = df_features.merge(df_r,how='inner',on='id_reseller')
 
 pipe_list = [le_cluster,ohe_cluster,le_zone,ohe_zone,le_weekday,ohe_weekday]
 

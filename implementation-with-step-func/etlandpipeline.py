@@ -277,7 +277,7 @@ df_to_predict_feats = df_to_predict[['mean-last-30', 'mean-last-7', 'std-last-30
        'weekday_0', 'weekday_1', 'weekday_2', 'weekday_3', 'weekday_4',
        'weekday_5', 'weekday_6']]
        
-write_dataframe_to_csv_on_s3(df_to_predict_feats,bucket,'to_predict.csv)
-write_dataframe_to_csv_on_s3(df_to_predict[['id_reseller']],bucket,'id_reseller_to_predict.csv)
+write_dataframe_to_csv_on_s3(df_to_predict_feats,bucket,'to_predict.csv')
+write_dataframe_to_csv_on_s3(df_to_predict[['id_reseller']],bucket,'id_reseller_to_predict.csv')
 
 
